@@ -1,0 +1,19 @@
+[package]
+name = "pumpkinmc-plugin-template"
+version = "0.1.0"
+edition = "2024"
+authors = ["acopier <acopierlive@gmail.com>"]
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+pumpkin-plugin-api = {
+  git = "https://github.com/Pumpkin-MC/Pumpkin",
+  version = "0.1.0",
+}
+tracing = "0.1"
+
+[profile.release]
+strip = "symbols"
+lto = "thin"
