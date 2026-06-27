@@ -5,12 +5,12 @@ struct MyPlugin;
 
 impl Plugin for MyPlugin {
     fn on_load(&mut self, _context: Context) -> pumpkin_plugin_api::Result<()> {
-        info!("Plugin Loaded");
+        info!("MyPlugin Loaded");
         Ok(())
     }
 
     fn on_unload(&mut self, _context: Context) -> pumpkin_plugin_api::Result<()> {
-        info!("Plugin unloaded. Goodbye.");
+        info!("MyPlugin unloaded. Goodbye.");
         Ok(())
     }
 
